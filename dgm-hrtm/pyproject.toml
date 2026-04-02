@@ -10,8 +10,8 @@ readme = "README.md"
 requires-python = ">=3.10"
 
 authors = [
-    { name = "Óscar Olmo Torrecillas", email = "" },
-    { name = "Jorge Berenguer Antequera", email = "" },
+    { name = "Óscar Olmo Torrecillas", email = "olmo.torrecillas.oscar@gmail.com" },
+    { name = "Jorge Berenguer Antequera", email = "f02beanj@uco.es" },
     { name = "José Francisco Benavente Cuevas", email = "" }
 ]
 
