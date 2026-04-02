@@ -1,0 +1,81 @@
+Metadata-Version: 2.4
+Name: dgm-hrtm
+Version: 0.1.0
+Summary: Gaussian atmospheric dispersion model with HRTM respiratory deposition
+Author: Your Name
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: requests
+Dynamic: license-file
+
+# DGM-HRTM
+
+Gaussian atmospheric dispersion model coupled with a simplified Human Respiratory Tract Model (HRTM) for radiological exposure assessment.
+
+---
+
+## Description
+
+This project implements:
+
+- A **Gaussian plume dispersion model** for atmospheric transport of radionuclides
+- Integration with **meteorological data (Open-Meteo API)**
+- A **Human Respiratory Tract Model (HRTM)** for inhalation dose estimation
+- Support for:
+  - Worker and public exposure
+  - Age-dependent dose coefficients (ICRP-based)
+  - Particle properties (density, shape factor)
+- Optional **Mapbox-based geospatial visualization**
+
+---
+
+## Installation
+
+Clone the repository and install in editable mode:
+
+```bash
+pip install dgm-hrtm .
+```
+
+---
+
+## Usage 
+
+Run the interactive CLI:
+
+dgm-run
+
+You will be prompted to enter:
+
+ - Domain parameters
+ - Source/emission parameters
+ - Dispersion model settings
+ - Radionuclide and dose parameters
+ - HRTM parameters
+ - Meteorological configuration
+
+---
+## Outputs
+
+The simulation generates:
+
+ - 2D concentration maps
+ - Dose maps (Sv)
+ - HRTM deposition results
+ - Figures and plots
+ - parameters.txt with full configuration
+
+All outputs are stored in a RESULTS/ directory.
+
+---
+
+## Authors
+
+- Óscar Olmo Torrecillas
+- Jorge Berenguer Antequera
+- José Francisco Benavente Cuevas

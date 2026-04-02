@@ -1,0 +1,403 @@
+{
+  "_meta": {
+    "source": "ICRP Publication 66, Table 15",
+    "description": "Values of anatomical and physiological parameters for substitution in the model of regional deposition in the respiratory tract.",
+    "notes": [
+      "Sex distinction is available only for adult and 15-year subjects in Table 15.",
+      "5 y, 1 y, and 3 mo subjects do not have heavy-exercise values in Table 15; these are stored as null.",
+      "Fn denotes the fraction of total ventilatory airflow passing through the nose.",
+      "Parameters marked as explicit in the original table are still stored here even if not all are used immediately."
+    ],
+    "units": {
+      "frc_ml": "mL",
+      "vd_et_ml": "mL",
+      "vd_bb_ml": "mL",
+      "vd_bb_small_ml": "mL",
+      "vd_total_ml": "mL",
+      "height_cm": "cm",
+      "d0_cm": "cm",
+      "d9_cm": "cm",
+      "d16_cm": "cm",
+      "B_m3_h": "m^3/h",
+      "fR_min": "1/min",
+      "VT_ml": "mL",
+      "V_ml_s": "mL/s"
+    }
+  },
+  "breathing_modes": {
+    "nasal": {
+      "description": "Normal nose breathing"
+    },
+    "mouth": {
+      "description": "Mouth-breather assumptions from Table 15"
+    }
+  },
+  "scenarios": {
+    "sleep": {
+      "Fn_normal": 1.0,
+      "Fn_mouth": 0.7
+    },
+    "sitting": {
+      "Fn_normal": 1.0,
+      "Fn_mouth": 0.7
+    },
+    "light_exercise": {
+      "Fn_normal": 1.0,
+      "Fn_mouth": 0.4
+    },
+    "heavy_exercise": {
+      "Fn_normal": 0.5,
+      "Fn_mouth": 0.3
+    }
+  },
+  "subjects": {
+    "adult": {
+      "male": {
+        "anatomy": {
+          "frc_ml": 3301,
+          "vd_et_ml": 50,
+          "vd_bb_ml": 49,
+          "vd_bb_small_ml": 47,
+          "vd_total_ml": 146,
+          "height_cm": 176,
+          "d0_cm": 1.65,
+          "d9_cm": 0.165,
+          "d16_cm": 0.051,
+          "sf_t": 1.0,
+          "sf_b": 1.0,
+          "sf_A": 1.0
+        },
+        "breathing": {
+          "sleep": {
+            "B_m3_h": 0.45,
+            "fR_min": 12,
+            "VT_ml": 625,
+            "V_ml_s": 250
+          },
+          "sitting": {
+            "B_m3_h": 0.54,
+            "fR_min": 12,
+            "VT_ml": 750,
+            "V_ml_s": 300
+          },
+          "light_exercise": {
+            "B_m3_h": 1.5,
+            "fR_min": 20,
+            "VT_ml": 1250,
+            "V_ml_s": 833
+          },
+          "heavy_exercise": {
+            "B_m3_h": 3.0,
+            "fR_min": 26,
+            "VT_ml": 1920,
+            "V_ml_s": 1670
+          }
+        }
+      },
+      "female": {
+        "anatomy": {
+          "frc_ml": 2681,
+          "vd_et_ml": 40,
+          "vd_bb_ml": 40,
+          "vd_bb_small_ml": 44,
+          "vd_total_ml": 124,
+          "height_cm": 163,
+          "d0_cm": 1.53,
+          "d9_cm": 0.159,
+          "d16_cm": 0.048,
+          "sf_t": 1.08,
+          "sf_b": 1.04,
+          "sf_A": 1.07
+        },
+        "breathing": {
+          "sleep": {
+            "B_m3_h": 0.32,
+            "fR_min": 12,
+            "VT_ml": 444,
+            "V_ml_s": 178
+          },
+          "sitting": {
+            "B_m3_h": 0.39,
+            "fR_min": 14,
+            "VT_ml": 464,
+            "V_ml_s": 217
+          },
+          "light_exercise": {
+            "B_m3_h": 1.25,
+            "fR_min": 21,
+            "VT_ml": 992,
+            "V_ml_s": 694
+          },
+          "heavy_exercise": {
+            "B_m3_h": 2.7,
+            "fR_min": 33,
+            "VT_ml": 1364,
+            "V_ml_s": 1500
+          }
+        }
+      }
+    },
+    "age_15y": {
+      "male": {
+        "anatomy": {
+          "frc_ml": 2677,
+          "vd_et_ml": 45,
+          "vd_bb_ml": 44,
+          "vd_bb_small_ml": 41,
+          "vd_total_ml": 130,
+          "height_cm": 169,
+          "d0_cm": 1.59,
+          "d9_cm": 0.161,
+          "d16_cm": 0.047,
+          "sf_t": 1.04,
+          "sf_b": 1.03,
+          "sf_A": 1.07
+        },
+        "breathing": {
+          "sleep": {
+            "B_m3_h": 0.42,
+            "fR_min": 14,
+            "VT_ml": 500,
+            "V_ml_s": 233
+          },
+          "sitting": {
+            "B_m3_h": 0.48,
+            "fR_min": 15,
+            "VT_ml": 533,
+            "V_ml_s": 267
+          },
+          "light_exercise": {
+            "B_m3_h": 1.38,
+            "fR_min": 23,
+            "VT_ml": 1000,
+            "V_ml_s": 767
+          },
+          "heavy_exercise": {
+            "B_m3_h": 2.92,
+            "fR_min": 36,
+            "VT_ml": 1352,
+            "V_ml_s": 1622
+          }
+        }
+      },
+      "female": {
+        "anatomy": {
+          "frc_ml": 2325,
+          "vd_et_ml": 39,
+          "vd_bb_ml": 39,
+          "vd_bb_small_ml": 37,
+          "vd_total_ml": 114,
+          "height_cm": 161,
+          "d0_cm": 1.52,
+          "d9_cm": 0.156,
+          "d16_cm": 0.045,
+          "sf_t": 1.09,
+          "sf_b": 1.06,
+          "sf_A": 1.13
+        },
+        "breathing": {
+          "sleep": {
+            "B_m3_h": 0.35,
+            "fR_min": 17,
+            "VT_ml": 417,
+            "V_ml_s": 194
+          },
+          "sitting": {
+            "B_m3_h": 0.4,
+            "fR_min": 16,
+            "VT_ml": 417,
+            "V_ml_s": 222
+          },
+          "light_exercise": {
+            "B_m3_h": 1.3,
+            "fR_min": 24,
+            "VT_ml": 903,
+            "V_ml_s": 722
+          },
+          "heavy_exercise": {
+            "B_m3_h": 2.57,
+            "fR_min": 38,
+            "VT_ml": 1127,
+            "V_ml_s": 1428
+          }
+        }
+      }
+    },
+    "age_10y": {
+      "default": {
+        "anatomy": {
+          "frc_ml": 1484,
+          "vd_et_ml": 25,
+          "vd_bb_ml": 26,
+          "vd_bb_small_ml": 26,
+          "vd_total_ml": 78,
+          "height_cm": 138,
+          "d0_cm": 1.31,
+          "d9_cm": 0.143,
+          "d16_cm": 0.039,
+          "sf_t": 1.26,
+          "sf_b": 1.16,
+          "sf_A": 1.31
+        },
+        "breathing": {
+          "sleep": {
+            "B_m3_h": 0.31,
+            "fR_min": 17,
+            "VT_ml": 304,
+            "V_ml_s": 172
+          },
+          "sitting": {
+            "B_m3_h": 0.38,
+            "fR_min": 19,
+            "VT_ml": 333,
+            "V_ml_s": 211
+          },
+          "light_exercise": {
+            "B_m3_h": 1.12,
+            "fR_min": 32,
+            "VT_ml": 583,
+            "V_ml_s": 622
+          },
+          "heavy_exercise": {
+            "B_m3_h": 2.03,
+            "fR_min": 46,
+            "VT_ml": 752,
+            "V_ml_s": 1128
+          }
+        }
+      }
+    },
+    "age_5y": {
+      "default": {
+        "anatomy": {
+          "frc_ml": 767,
+          "vd_et_ml": 13.3,
+          "vd_bb_ml": 15.5,
+          "vd_bb_small_ml": 16.7,
+          "vd_total_ml": 46,
+          "height_cm": 110,
+          "d0_cm": 1.06,
+          "d9_cm": 0.127,
+          "d16_cm": 0.031,
+          "sf_t": 1.55,
+          "sf_b": 1.3,
+          "sf_A": 1.63
+        },
+        "breathing": {
+          "sleep": {
+            "B_m3_h": 0.24,
+            "fR_min": 23,
+            "VT_ml": 174,
+            "V_ml_s": 133
+          },
+          "sitting": {
+            "B_m3_h": 0.32,
+            "fR_min": 25,
+            "VT_ml": 213,
+            "V_ml_s": 178
+          },
+          "light_exercise": {
+            "B_m3_h": 0.57,
+            "fR_min": 39,
+            "VT_ml": 234,
+            "V_ml_s": 317
+          },
+          "heavy_exercise": {
+            "B_m3_h": null,
+            "fR_min": null,
+            "VT_ml": null,
+            "V_ml_s": null
+          }
+        }
+      }
+    },
+    "age_1y": {
+      "default": {
+        "anatomy": {
+          "frc_ml": 244,
+          "vd_et_ml": 4.7,
+          "vd_bb_ml": 6.8,
+          "vd_bb_small_ml": 8.7,
+          "vd_total_ml": 20,
+          "height_cm": 75,
+          "d0_cm": 0.75,
+          "d9_cm": 0.107,
+          "d16_cm": 0.022,
+          "sf_t": 2.2,
+          "sf_b": 1.55,
+          "sf_A": 2.3
+        },
+        "breathing": {
+          "sleep": {
+            "B_m3_h": 0.15,
+            "fR_min": 34,
+            "VT_ml": 74,
+            "V_ml_s": 83
+          },
+          "sitting": {
+            "B_m3_h": 0.22,
+            "fR_min": 36,
+            "VT_ml": 102,
+            "V_ml_s": 122
+          },
+          "light_exercise": {
+            "B_m3_h": 0.35,
+            "fR_min": 47,
+            "VT_ml": 127,
+            "V_ml_s": 194
+          },
+          "heavy_exercise": {
+            "B_m3_h": null,
+            "fR_min": null,
+            "VT_ml": null,
+            "V_ml_s": null
+          }
+        }
+      }
+    },
+    "infant": {
+      "default": {
+        "anatomy": {
+          "frc_ml": 148,
+          "vd_et_ml": 2.6,
+          "vd_bb_ml": 4.5,
+          "vd_bb_small_ml": 6.8,
+          "vd_total_ml": 14,
+          "height_cm": 60,
+          "d0_cm": 0.616,
+          "d9_cm": 0.099,
+          "d16_cm": 0.02,
+          "sf_t": 2.68,
+          "sf_b": 1.67,
+          "sf_A": 2.58
+        },
+        "breathing": {
+          "sleep": {
+            "B_m3_h": 0.09,
+            "fR_min": 38,
+            "VT_ml": 39,
+            "V_ml_s": 50
+          },
+          "sitting": {
+            "B_m3_h": null,
+            "fR_min": null,
+            "VT_ml": null,
+            "V_ml_s": null
+          },
+          "light_exercise": {
+            "B_m3_h": 0.19,
+            "fR_min": 46,
+            "VT_ml": 66,
+            "V_ml_s": 106
+          },
+          "heavy_exercise": {
+            "B_m3_h": null,
+            "fR_min": null,
+            "VT_ml": null,
+            "V_ml_s": null
+          }
+        }
+      }
+    }
+  }
+}

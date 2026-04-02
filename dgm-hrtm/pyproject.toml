@@ -1,0 +1,64 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dgm-hrtm"
+version = "0.1.0"
+description = "Gaussian atmospheric dispersion model with Human Respiratory Tract Model deposition"
+readme = "README.md"
+requires-python = ">=3.10"
+
+authors = [
+    { name = "Óscar Olmo Torrecillas", email = "" },
+    { name = "Jorge Berenguer Antequera", email = "" },
+    { name = "José Francisco Benavente Cuevas", email = "" }
+]
+
+license = { text = "MIT" }
+
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "scipy",
+    "requests"
+]
+
+keywords = [
+    "gaussian plume",
+    "atmospheric dispersion",
+    "radiological exposure",
+    "HRTM",
+    "nuclear safety"
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Atmospheric Science"
+]
+
+[project.urls]
+Homepage = "https://github.com/OOT01"
+Repository = "https://github.com/OOT01/DisGauss-and-HRTM-models"
+
+[project.scripts]
+dgm-run = "dgm_hrtm.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+dgm_hrtm = [
+    "data/*.json",
+    "data/*.csv"
+]
